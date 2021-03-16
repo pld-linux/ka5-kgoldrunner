@@ -1,15 +1,15 @@
-%define		kdeappsver	19.04.1
+%define		kdeappsver	20.12.3
 %define		kframever	5.56.0
 %define		qtver		5.9.0
 %define		kaname		kgoldrunner
 Summary:	kgoldrunner
 Name:		ka5-%{kaname}
-Version:	19.04.1
+Version:	20.12.3
 Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Applications/Games
-Source0:	http://download.kde.org/stable/applications/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	337c7f23bc68b8c32effcfc2c8488af8
+Source0:	http://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
+# Source0-md5:	49dbee05e76ac894b3bb757768e15ec0
 URL:		http://www.kde.org/
 BuildRequires:	Qt5Core-devel >= %{qtver}
 BuildRequires:	Qt5Gui-devel
@@ -67,8 +67,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f %{kaname}.lang
 %defattr(644,root,root,755)
-/etc/xdg/kgoldrunner.categories
-/etc/xdg/kgoldrunner.knsrc
 %attr(755,root,root) %{_bindir}/kgoldrunner
 %{_desktopdir}/org.kde.kgoldrunner.desktop
 %{_iconsdir}/hicolor/128x128/apps/kgoldrunner.png
@@ -80,3 +78,5 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/kgoldrunner
 %{_datadir}/kxmlgui5/kgoldrunner
 %{_datadir}/metainfo/org.kde.kgoldrunner.appdata.xml
+%{_datadir}/qlogging-categories5/kgoldrunner.categories
+%{_datadir}/knsrcfiles/kgoldrunner.knsrc
