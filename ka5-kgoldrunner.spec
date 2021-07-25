@@ -43,6 +43,12 @@ climbs stairs, dig holes and dodges enemies in order to collect all
 the gold nuggets and escape to the next level. Your enemies are also
 after the gold.
 
+%description -l pl.UTF-8
+KGoldrunner jest grą akcji, gdzie bohater biegnie przez labirynt,
+wchodzi po schodach, kopie doły i ucieka wrogom wcelu zebrania grudek
+złota i przejścia do następnego poziomu. Twoi wrogowie również
+szukają złota.
+
 %prep
 %setup -q -n %{kaname}-%{version}
 
